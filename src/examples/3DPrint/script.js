@@ -7,7 +7,7 @@ import rhino3dm from 'https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/rhino3dm
 const definition = '3DPrint.gh'
 
 // setup input change events
-const count_slider = document.getElementById( 'density' )
+const density_slider = document.getElementById( 'density' )
 density_slider.addEventListener( 'mouseup', onSliderChange, false )
 density_slider.addEventListener( 'touchend', onSliderChange, false )
 const radius_slider = document.getElementById( 'radius' )
