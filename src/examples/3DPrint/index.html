@@ -46,15 +46,15 @@
     </div>
     <div>
       <label for="RH_IN:radius">RADIUS FOR VASE</label>
-      <input type="range" id="RH_IN:radius" name="radius" min="1" max="5.00" value="3" step="4">
+      <input type="range" id="RH_IN:radius" name="radius" min="1" max="5.00" value="3" step="1">
 </div>
 <div>
   <label for="RH_IN:height">HEIGHT FOR VASE</label>
-  <input type="range" id="RH_IN:height" name="length" min="80" max="100.00" value="89" step="5">
+  <input type="range" id="RH_IN:height" name="height" min="80" max="100.00" value="90" step="5">
 </div>
 <div>
   <label for="RH_IN:rotate">ROTATE</label>
-  <input type="range" id="RH_IN:rotate" name="length" min="0" max="360.00" value="120" step="30">
+  <input type="range" id="RH_IN:rotate" name="rotate" min="0" max="360.00" value="120" step="30">
 
 </div>
 <!-- /////////////////////////////////////////////////////////////////////////// -->
@@ -65,7 +65,8 @@
   <label for="RH_IN:3dprint">3D Print on</label>
   <input type="checkbox" id="RH_IN:3dprint" >
   </div>
-  <div>
+//////////////////////////////////////////////////////////////////
+<div> 
     <label for="RH_IN:type">TYPE</label>
     <select name="typeDropdown" id="RH_IN:type">
       <option value="0">INVERTED CONE</option>
@@ -73,8 +74,10 @@
       <option value="2">SINE</option>
       <option value="3">FLASK</option>
       <option value="4">ORGANIC</option>
- </select>
-  </div>
+</select>
+</div> 
+//////////////////////////////////////////////////////////////////
+
 <div><button id="downloadButton" disabled>Download</button></div>
                 <!-- <div><a href="3DPrint.gh" download="3DPrint.gh.html">Save source code</a></div> -->
             </div>
@@ -177,10 +180,10 @@ function init() {
     camera.position.set(1, -1, 1) // like perspective view
 
     // very light grey for background, like rhino
-    // scene.background = new THREE.Color('black')
+     //scene.background = new THREE.Color('whitesmoke')
 
     //texture Loader
-    /* 
+    
     {
     const loader = new THREE.TextureLoader();
     
@@ -194,7 +197,7 @@ function init() {
       }
       ); 
   }
-  */
+  
 
 
     // create the renderer and add it to the html
